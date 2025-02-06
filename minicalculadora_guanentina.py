@@ -38,5 +38,6 @@ elif opc == 6:
     logaritmo = mt.log(x,y)
     print(f"el resultado del logaritmo es {logaritmo}")
 
+
 else:
     print("no valido")
