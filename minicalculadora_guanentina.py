@@ -1,10 +1,36 @@
 import math
 
-def suma(x,y):
-    return x + y
+print("----------------------------------")
+print("1) suma")
+print("2) resta")
+print("3) multiplicación")
+print("4) división")
+print("5) potenciación")
+print("6) logaritmos")
+print("-----------------------------------")
 
-def resta(x,y):
-    return x - y
+opc = int(input("digite el número correspondiente a la operacion: "))
 
-def multiplicacion(x,y):
-    return 
+x = int(input("digite el primer número de la operación: "))
+y = int(input("digite el segundo número de la operación: "))
+
+if opc == 1:
+    print(f"el resultado de la suma es {(x)+(y)}")
+
+elif opc == 2:
+    print(f"el resultado de la resta es {(x)-(y)}")
+
+elif opc == 3:
+    print(f"el resultado de la multiplicación es {(x)*(y)}")
+
+elif opc == 4:
+    print(f"el resultado de la división es {(x)/(y)}")
+
+elif opc == 5:
+    print(f"el resultado de la potenciación es {(x)**(y)}")
+
+elif opc == 6:
+    print(f"el resultado de la suma es {math.log(x)(y)}")
+
+else:
+    print("opcion no valida ")
