@@ -10,7 +10,7 @@ print("6) logaritmos")
 print("-----------------------------------")
 
 opc = int(input("digite el número correspondiente a la operacion: "))
-
+    
 x = int(input("digite el primer número de la operación: "))
 y = int(input("digite el segundo número de la operación: "))
 
@@ -24,13 +24,19 @@ elif opc == 3:
     print(f"el resultado de la multiplicación es {(x)*(y)}")
 
 elif opc == 4:
-    print(f"el resultado de la división es {(x)/(y)}")
+    if y <= 0:
+        print("Error.")
+    else:
+        print(f"el resultado de la división es {(x)/(y)}")
 
 elif opc == 5:
     print(f"el resultado de la potenciación es {(x)**(y)}")
 
 elif opc == 6:
-    print(f"el resultado de la suma es {math.log(x)(y)}")
+    if x > 0 and y > 0:
+        resultado = math.log(x, y)
+        print (f"resultado de el logaritmo es: {resultado}")
+    else: resultado = ("logaritmo x o y debe ser mayor que 0")
 
 else:
-    print("opcion no valida ")
+    print("no valido")
