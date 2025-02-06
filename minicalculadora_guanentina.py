@@ -1,4 +1,5 @@
-import math
+import math as mt
+
 
 print("----------------------------------")
 print("1) suma")
@@ -13,6 +14,7 @@ opc = int(input("digite el número correspondiente a la operacion: "))
     
 x = int(input("digite el primer número de la operación: "))
 y = int(input("digite el segundo número de la operación: "))
+
 
 if opc == 1:
     print(f"el resultado de la suma es {(x)+(y)}")
@@ -33,10 +35,8 @@ elif opc == 5:
     print(f"el resultado de la potenciación es {(x)**(y)}")
 
 elif opc == 6:
-    if x > 0 and y > 0:
-        resultado = math.log(x, y)
-        print (f"resultado de el logaritmo es: {resultado}")
-    else: resultado = ("logaritmo x o y debe ser mayor que 0")
+    logaritmo = mt.log(x,y)
+    print(f"el resultado del logaritmo es {logaritmo}")
 
 else:
     print("no valido")
