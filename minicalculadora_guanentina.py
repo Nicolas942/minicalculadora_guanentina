@@ -35,9 +35,8 @@ elif opc == 5:
     print(f"el resultado de la potenciación es {(x)**(y)}")
 
 elif opc == 6:
-    logaritmo = mt.log(x,y)
+    logaritmo = mt.log(y,x)
     print(f"el resultado del logaritmo es {logaritmo}")
-
 
 else:
     print("no valido")
